@@ -1,0 +1,54 @@
+html, body {
+	margin: 0px;
+	padding: 0px;
+	font-family: sans-serif;
+	height: 100%;
+}
+
+nav {
+	width: 100%;
+	height: 60px;
+	background-color: red;
+}
+
+.nav-container {
+	max-width: 1024px;
+	min-width: 1024px;
+	margin: auto;
+}
+
+.logo-container {
+	display: inline;
+	margin-top: 15px;
+	float: left;
+}
+
+.search-container {
+
+	display: inline;
+	float: left;
+	margin-top:18px; 
+	margin-left:40px;
+}
+
+.search-container input {
+	height: 22px;
+	width: 400px;
+	border-radius: 3px;
+	border: 1px solid #999;
+	padding-left: 10px;
+}
+
+aside {
+	background-color: gray;
+	width:250px;
+	position: absolute;
+	top: 60px;
+	bottom: 0;
+}
+
+main {
+	width: 500px;
+	background-color: lightblue;
+	position: relative;
+}
