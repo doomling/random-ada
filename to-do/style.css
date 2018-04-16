@@ -1,0 +1,87 @@
+@font-face {
+font-family: "FontAwesome";
+font-weight: normal;
+font-style : normal;
+       src : url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.eot?v=4.3.0");
+       src : url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.eot?#iefix&v=4.3.0") format("embedded-opentype"),
+             url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.woff2?v=4.3.0") format("woff2"),
+             url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.woff?v=4.3.0") format("woff"),
+             url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.ttf?v=4.3.0") format("truetype"),
+             url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular") format("svg");
+}
+
+body {
+
+	font-family: sans-serif;
+}
+
+.flex-wrap {
+	display: flex;
+ 	justify-content: center;
+}
+
+.img-wrapper {
+	background-color: pink;
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+img {
+width: 60px;
+height: auto;
+}
+
+.main {
+	background-color: #F2F5EA;
+	height:auto;
+	width: 300px;
+	min-height: 300px;
+	padding: 50px;
+	color: #2C363F;
+	border:1px solid #D6DBD2;
+}
+
+.entry {
+	border: 1px solid #666;
+	height: 30px;
+	width: 240px;
+}
+
+#add {
+	height: 30px;
+	width: 50px;
+	color: #445a7c;
+	border: 0;
+	background-color: #bcd6f40
+}
+
+.input-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+ul {
+	list-style: none;
+	margin: 10px, 0;
+	padding: 0;
+}
+
+li {
+	background-color: #EFD6D2;
+	font-size: 18px;
+}
+
+li:before {
+	padding-left: 9px;
+	font-family: FontAwesome;
+	content: "\f101";
+}
+
+.list-alternative {
+	background-color: #FFDDE2;
+}

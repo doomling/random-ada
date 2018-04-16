@@ -1,0 +1,117 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+nav {
+	display: none;
+}
+
+.container {
+	@red: red;
+	@blue: blue;
+	@wsize: 600px;
+	@hsize: 100px;
+
+	height: auto;
+	width: 600px;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+
+	.banner {
+		background-color: @red;
+		width: @wsize;
+		height: @hsize;
+		margin-bottom: @margin-box;
+		}
+	
+	.box {
+		height: @hsize;
+		width:  @wsize / 2 - 5;
+		display: inline-block;
+		margin-bottom: @margin-box;
+	}
+
+	@margin-box: 10px;
+
+	.box1 {
+		background-color: @red;
+			}
+
+	.box2 {
+		margin-left: @margin-box;
+		background-color: @blue;
+	}
+
+	.box-lorem1 {
+		background-color: @blue;
+		color: @red;
+		width: @wsize;
+		height: @hsize;
+		margin-bottom: @margin-box;
+	}
+
+	.box-lorem2 {
+		background-color: @red;
+		color: @blue;
+		width: @wsize;
+		height: @hsize;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	
+	@blue: blue;
+	@maxwidth: 100%;
+	@search-width: @maxwidth / 3;
+	@clearspace: 5px;
+
+	nav {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		height: 30px;
+		width: @maxwidth;
+		background-color: @blue;
+		margin: @clearspace 0;
+	}
+
+	.container {
+		width: @maxwidth;
+
+		.banner {
+	 		width: @maxwidth;
+	 		background-color: pink;
+	 		margin: @clearspace auto;
+		}
+
+		.box-lorem1, .box-lorem2, .box, .box1, .box2 {
+			width: (@maxwidth - @clearspace) / 2;
+	 		background-color: gray;
+	 		margin: @clearspace auto;
+		}
+
+		.search-container {
+			max-width: @maxwidth / 2;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		.search {
+			width: @maxwidth - @clearspace;
+			height: 20px;
+		}
+
+		i {
+			font-size: 20px;
+			color: #fff;
+			margin: 0 @clearspace;
+		}
+
+		p {
+			font-size: 10px;
+		}
+	}
+}

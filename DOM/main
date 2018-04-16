@@ -1,0 +1,6 @@
+function saludo() {
+	console.log('Holi');
+}
+
+var body = var body = document.querySelector('body');
+

@@ -1,0 +1,30 @@
+.container {
+	background-color: #000;
+	height: 500px;
+	width: 500px;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.forma (@radius: 50%, @color: yellow) {
+background-color:  @color;
+width: 200px;
+height: 200px;
+border-radius: @radius;
+margin: 10px;
+}
+
+.a {
+	.forma;
+}
+
+.b {
+	.forma(0, red);
+}
+
+.c {
+	.forma(10px, blue);
+}

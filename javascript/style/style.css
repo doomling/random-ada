@@ -1,0 +1,21 @@
+body {
+	font-family: sans-serif;
+	color: peru;
+}
+
+.caja {
+	width: 100px;
+	height: 100px;
+	background-color: pink;
+}
+
+.cajaPrincipal {
+	width: 200px;
+	height: 200px;
+	background-color: red;
+}
+
+.text {
+	color: black;
+	font-size: 40px;
+}
